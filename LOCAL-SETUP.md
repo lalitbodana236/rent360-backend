@@ -14,3 +14,10 @@ Use this workflow:
     mvn -U clean verify
     
 You can ignore GitHub Packages for now and continue fully local.
+
+
+mvn -f rent360-build-platform/rent360-dependencies-bom/pom.xml -DskipTests install; mvn -f rent360-build-platform/rent360-service-parent/pom.xml -DskipTests install
+
+mvn -DskipTests validate
+
+mvn clean verify
